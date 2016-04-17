@@ -35,7 +35,19 @@ from distutils.command.build import build as BuildCommand
 from setuptools import setup, find_packages
 from setuptools.command.sdist import sdist as SDistCommand
 from setuptools.command.develop import develop as DevelopCommand
-install_requires = []
+install_requires = [
+    'click==6.6',
+    'Django==1.9.5',
+    'django-braces==1.8.1',
+    'django-cors-headers==1.1.0',
+    'django-oauth-toolkit==0.10.0',
+    'django-recaptcha==1.0.4',
+    'djangorestframework==3.3.3',
+    'oauthlib==1.0.3',
+    'pytz==2016.3',
+    'six==1.10.0',
+    'South==1.0.2',
+]
 tests_require = []
 dev_requires = []
 postgres_requires = []
@@ -45,7 +57,7 @@ dsym_requires = []
 class WangblogSDistCommand(SDistCommand):
     # If we are not a light build we want to also execute build_js as
     # part of our source build pipeline.
-        sub_commands = SDistCommand.sub_commands
+    sub_commands = SDistCommand.sub_commands
 
 
 class WangblogBuildCommand(BuildCommand):

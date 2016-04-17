@@ -5,4 +5,5 @@
 cd WangBlog
 > python setup.py develop
 > wangblog migrate
-> wangblog runserver 
+> wangblog runserver
+> 

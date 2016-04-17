@@ -1,4 +1,12 @@
+click==6.6
 Django==1.9.5
+django-braces==1.8.1
+django-cors-headers==1.1.0
+django-oauth-toolkit==0.10.0
 django-recaptcha==1.0.4
+djangorestframework==3.3.3
+oauthlib==1.0.3
+pytz==2016.3
+six==1.10.0
 South==1.0.2
--e git+git@github.com:wanghe4096/WangBlog.git@14dec45ad86e20ba830d880f3c4ba18c30061614#egg=WangBlog
+-e git+git@github.com:wanghe4096/WangBlog.git@689a21c3bc7e98d1179b1cfe8150f3701e5e10a6#egg=WangBlog
