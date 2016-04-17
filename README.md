@@ -3,10 +3,11 @@
 
 # 安装
 cd WangBlog
-> python setup.py develop
-> wangblog migrate
-> wangblog runserver
-> wangblog init
+* python setup.py develop
+* wangblog migrate
+* wangblog createsuperuser
+* wangblog init
+* wangblog runserver
 
 # CHANGES LOG
 * 解决了之前oauth认证去不掉授权表单的问题
