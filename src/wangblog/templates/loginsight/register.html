@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>注册 | LogInsight</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<link href="/static/loginsight/css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<script src="/static/loginsight/js/jquery.min.js"></script>
+		<link href="/static/loginsight/css/style.css" rel='stylesheet' type='text/css' />
+		<script src="/static/loginsight/js/jquery.maskedinput.js" type="text/javacript" > </script>
+		<script type="text/javascript" src="/static/loginsight/js/jquery.validate.js" ></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71035313-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1a2fead704d6f0d4a6e35987b2da75cf";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	</head>
+	<body>
+	<body class="login-background">
+				<!--Contents-->
+
+            <div class="signup-infor">
+				<div>
+					<a href="/"><img src="/static/loginsight/images/logolv.png"></a>
+					<h4>请填写以下信息完成注册。</h4>
+				</div>
+				<form method="post" id="signupform" action="/register">
+					{% csrf_token %}
+					<div>
+						<!--<div id="username"><span>用户名：</span><input type="text" placeholder="用户名将作为登录账号" class="form-control" name="username" autocomplete="on" id="name"></div>-->
+						<!--<div id="password"><span>密码：</span><input type="password" placeholder="登录密码 6~15 位" class="form-control" name="password" autocomplete="off" id="password" style="ime-mode:disabled;" onpaste="return false"></div>-->
+						<!--<div id="repassword"><span>重复密码：</span><input type="password" placeholder="再次输入密码" class="form-control" name="repassword" autocomplete="off" id="repassword" style="ime-mode:disabled;" onpaste="return false"></div>-->
+						<!--<div id="email"><span>邮箱：</span><input type="text" placeholder="邮箱" class="form-control" name="email" autocomplete="on" id="email"></div>-->
+						<!--<div id="phone"><span>手机号码：</span><input type="text" placeholder="手机号码" class="form-control phone" name="cellphone" autocomplete="on" id="cellphone"></div>-->
+						<!--<div id="org_name"><span>组织名：</span><input type="text" placeholder="组织名" class="form-control" name="companyName" autocomplete="on" id="companyName"></div>-->
+						<!--<div id="sub_domain"><span>子域名：</span><input type="text"  placeholder="子域名" class="form-control" name="sub_domain" autocomplete="on" id="servercnt"></div>.loginsight.cn<div id="username"><span>用户名：</span><input type="text" placeholder="用户名将作为登录账号" class="form-control" name="username" autocomplete="on" id="name"></div>-->
+						<div id="username"><input type="text" placeholder="用户名将作为登录账号" class="form-control" name="username" autocomplete="on" id="name"></div>
+						<div id="password"><input type="password" placeholder="登录密码 6~15 位" class="form-control" name="password" autocomplete="off" id="password" style="ime-mode:disabled;" onpaste="return false"></div>
+						<div id="repassword"><input type="password" placeholder="再次输入密码" class="form-control" name="repassword" autocomplete="off" id="repassword" style="ime-mode:disabled;" onpaste="return false"></div>
+						<div id="email"><input type="text" placeholder="邮箱" class="form-control" name="email" autocomplete="on" id="email"></div>
+						<div id="phone"><input type="text" placeholder="手机号码" class="form-control phone" name="cellphone" autocomplete="on" id="cellphone"></div>
+						<div id="org_name"><input type="text" placeholder="组织名" class="form-control" name="companyName" autocomplete="on" id="companyName"></div>
+						<!--<div id="sub_domain"><input type="text"  placeholder="子域名" class="form-control" name="sub_domain" autocomplete="on" id="servercnt"></div>.loginsight.cn-->
+					</div>
+					<div>
+						<input type="submit" name="submit" value="完成注册" class="btn btn-success" id="submit_btn">
+					</div>
+
+					<div class="infor-p">
+						<a href="/login"><p  style="color:#41b068;text-decoration:underline;">已有账号！点击登陆。</p></a>
+					</div>
+				</form>
+			</div>
+			<script type="text/javascript" src="/static/loginsight/js/index.js"></script>
+	</body>
+</html>

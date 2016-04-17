@@ -1,0 +1,67 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>LogInsight</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<link href="/static/loginsight/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script type='text/javascript'>window.BWEUM||(BWEUM={});BWEUM.info = {"stand":true,"agentType":"browser","agent":"bi-collector.oneapm.com/static/loginsight/js/bw-send-411.4.5.js","beaconUrl":"bi-collector.oneapm.com/beacon","licenseKey":"naAay~b67jZqzUMj","applicationID":2275197};</script><script type="text/javascript" src="//bi-collector.oneapm.com/static/loginsight/js/bw-loader-411.4.5.js"></script>
+
+	<script src="/static/loginsight/js/jquery.min.js"></script>
+	<link href="/static/loginsight/css/style.css" rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="/static/loginsight/js/index.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-71035313-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?1a2fead704d6f0d4a6e35987b2da75cf";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body class="login-background">
+
+<!--Contents-->
+<div class="loginbox">
+	<div>
+		<a href="/"><img src="/static/loginsight/images/logolv.png"></a>
+		<!--<h3>登陆</h3>-->
+	</div><br>
+	<form  role="form" method="post" action="{% url 'django.contrib.auth.views.login' %}">
+		{% csrf_token %}
+		<div id="usname">
+		<span>用户名：</span>
+		<input id="{{ form.username.auto_id }}" type="text" name="{{ form.username.name }}" class="form-control input-lg" placeholder="username" required>
+		</div>
+		<div id="pswor">
+		<span>密码：</span>
+		<input id="{{ form.password.auto_id }}" type="password" name="{{ form.password.name }}" class="form-control input-lg" placeholder="password" required>
+		</div>
+
+		<input type="hidden" name="next" value="{{next}}" />
+		<input value="Login" type="submit" class="btn btn-success" />
+	</form>
+	{% if form.errors %}
+	<div class="row text-center">
+		<p>Your username and password didn't match. Please try again.</p>
+	</div>
+	{% endif %}
+
+	<p>目前产品还在内测，完成注册后我们会及时告知您访问方式。</p>
+	<a href="/register" ><p style="color:#59e6ce;text-decoration:underline;">尚未注册？点击注册。</p></a>
+	<!--<a href="forget-password.html"><p  style="color:#59e6ce;">忘记密码？</p></a>-->
+</div>
+</body>
+</html>

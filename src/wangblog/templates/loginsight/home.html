@@ -1,0 +1,103 @@
+﻿{% extends "loginsight/base.html" %}
+
+{% block content %}
+
+<!--- we do ---->
+<div id="wedo" class="wedo">
+	<hr>
+	<div class="container">
+		<!--- wedo-grids ---->
+		<div class="wedo-grids">
+			<div class="col-md-6 wedo-left">
+				<p class="fc3s18">日志收集</p>
+				<ul class="nopl fc7s12">
+					<li>使用现有系统</li>
+					<li>将任何类型的日志实时上传到LogInsight中</li>
+				</ul>
+				<!--<a class="wedobtn" href="javascript:;">了解更多</a>-->
+			</div>
+			<div class="col-md-6 wedo-right">
+				<img src="/static/loginsight/images/divices.png" title="demo" />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- we do -->
+<!-- analysis -->
+<hr>
+<div id="analysis" class="analysis">
+	<div class="container">
+
+		<div class="analysis-grids">
+			<div class="col-md-6 analysis-left">
+				<img src="/static/loginsight/images/ad-img.png" title="loginsight" />
+			</div>
+			<div class="col-md-6 analysis-right ">
+				<h4 class="fc3s18">搜索分析</h4>
+				<ul class="nopl fc7s12">
+					<li>强大的搜索功能，保存搜索结果，共享使用</li>
+					<li>自动解析日志，字段值过滤</li>
+				</ul>
+				<!--<a class="wedobtn" href="javascript:;">了解更多</a>-->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--- warn ---->
+<hr>
+<div id="warn" class="warn">
+	<div class="container">
+		<div class="warn-grids">
+			<div class="col-md-6 warn-left text-left">
+				<h4 class="fc3s18">可视化</h4>
+				<ul class="nopl fc7s12">
+					<li>统计分析，自定义仪表盘</li>
+					<li>支持多种类型图表</li>
+				</ul>
+				<!--<a class="wedobtn" href="javascript:;">了解更多</a>-->
+			</div>
+			<div class="col-md-6 warn-right">
+				<img src="/static/loginsight/images/0ad-img1.png" title="analysis" />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--- //warn ---->
+<!-- visualization -->
+<hr>
+<div id="analysis" class="analysis">
+	<div class="container">
+		<div class="analysis-grids">
+			<div class="col-md-6 analysis-left">
+
+				<img src="/static/loginsight/images/ad-img2.png" title="warn" />
+			</div>
+			<div class="col-md-6 analysis-right ">
+				<h4 class="fc3s18">安全告警</h4>
+				<ul class="nopl fc7s12">
+
+					<li>异动时告警</li>
+					<li>及时发现问题，排除故障</li>
+				</ul>
+				<!--<a class="wedobtn" href="javascript:;">了解更多</a>-->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"> </div>
+<!-- tryout -->
+<div id="tryout " class="tryout">
+	<div class="container">
+		<div class="text-center">
+			<h2>开始试用吧!</h2>
+			<a class="trial-btn" href="/register">免费试用</a>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

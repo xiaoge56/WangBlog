@@ -1,3 +1,4 @@
 Django==1.9.5
+django-recaptcha==1.0.4
 South==1.0.2
--e git+git@github.com:wanghe4096/WangBlog.git@42c8f0adb636ec0f6c2d1ab3c703acb812662c9d#egg=WangBlog
+-e git+git@github.com:wanghe4096/WangBlog.git@14dec45ad86e20ba830d880f3c4ba18c30061614#egg=WangBlog
